@@ -157,4 +157,7 @@ class WebAudioplayersPlatform extends AudioplayersPlatformInterface {
     await player.dispose();
     players.remove(playerId);
   }
+
+  @override
+  Future<int?> get audioSessionId => Future.value(0);
 }

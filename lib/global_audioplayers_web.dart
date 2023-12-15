@@ -37,4 +37,7 @@ class WebGlobalAudioplayersPlatform
     _eventStreamController
         .addError(PlatformException(code: code, message: message));
   }
+
+  @override
+  Future<int?> get audioSessionId => Future.value(0);
 }
